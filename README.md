@@ -1,2 +1,3 @@
 # wing-use-auth
-the auth hook for react
+
+> The auth hook for react

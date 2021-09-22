@@ -1,0 +1,28 @@
+{
+  "name": "wing-use-auth",
+  "version": "0.0.1",
+  "description": "the auth hook for react app",
+  "main": "dist/wing-use-auth.es.js",
+  "module": "dist/wing-use-auth.es.js",
+  "unpkg": "dist/wing-use-auth.js",
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wayley/wing-use-auth.git"
+  },
+  "author": {
+    "name": "Robben Wayley",
+    "email": "hb_wangzheng@163.com"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Wayley/wing-use-auth/issues"
+  },
+  "homepage": "https://github.com/Wayley/wing-use-auth#readme",
+  "devDependencies": {
+    "rollup": "^2.26.5",
+    "rollup-plugin-terser": "^7.0.0"
+  }
+}
