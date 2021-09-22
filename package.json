@@ -22,7 +22,13 @@
   },
   "homepage": "https://github.com/Wayley/wing-use-auth#readme",
   "devDependencies": {
-    "rollup": "^2.26.5",
-    "rollup-plugin-terser": "^7.0.0"
+    "@babel/core": "^7.15.5",
+    "@babel/preset-react": "^7.14.5",
+    "rollup": "^2.56.3",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "dependencies": {
+    "react": "^17.0.2"
   }
 }
