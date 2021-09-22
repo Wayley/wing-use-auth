@@ -1,7 +1,13 @@
 {
   "name": "wing-use-auth",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "the auth hook for react app",
+  "keywords": [
+    "auth",
+    "auth-hook",
+    "react",
+    "react hook"
+  ],
   "main": "dist/wing-use-auth.es.js",
   "module": "dist/wing-use-auth.es.js",
   "unpkg": "dist/wing-use-auth.js",
