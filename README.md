@@ -27,7 +27,7 @@ import { AuthProvider } from "wing-use-auth";
 
 export default function App() {
   return (
-    <AuthProvider option={{ initialState: false }}>
+    <AuthProvider options={{ initialState: false }}>
       <ExamplePage />
     </AuthProvider>
   );
@@ -61,3 +61,10 @@ function ExamplePage() {
   );
 }
 ```
+
+### AuthProvider Options
+
+|   Attribute    | Version |                                    Remark                                     |
+| :------------: | :-----: | :---------------------------------------------------------------------------: |
+| `initialState` | <=0.0.2 | <div style="color: #fff; background: red; padding: 2px 10px">deprecated</div> |
+|  `cookieKey`   | >=0.0.3 |                        根据 cookie 值来设置初识的状态                         |

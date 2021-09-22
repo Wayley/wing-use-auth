@@ -1,8 +1,10 @@
 import React, { useContext, createContext, useState } from "react";
+import { get } from "./util";
 const authContext = createContext();
 
-function useProviderAuth(initialState) {
-  const [authenticated, setAuthenticated] = useState(initialState);
+function useProviderAuth(options) {
+  const { cookieKey } = options;
+  const [authenticated, setAuthenticated] = useState(get(cookieKey) && true);
   const signin = (cb) => {
     setAuthenticated(true);
     cb && cb();
@@ -21,8 +23,7 @@ function useProviderAuth(initialState) {
 }
 
 export function AuthProvider({ children, options }) {
-  const { initialState } = options;
-  const auth = useProviderAuth(initialState);
+  const auth = useProviderAuth(options);
   return <authContext.Provider value={auth}>{children}</authContext.Provider>;
 }
 
