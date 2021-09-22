@@ -1,6 +1,6 @@
 import React, { useContext, createContext, useState } from "react";
 const authContext = createContext();
-console.log(111);
+
 function useProviderAuth(initialState) {
   const [authenticated, setAuthenticated] = useState(initialState);
   const signin = (cb) => {
